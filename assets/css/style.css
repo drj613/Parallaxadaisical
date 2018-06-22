@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.p-img1, .p-img2, .p-img3{
+    position: relative;
+    opacity: 0.7;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+        fixed = parallax
+        scroll = normal (better for mobile)
+    */
+    background-attachment: fixed;
+}
+
+.p-img1{
+    background-image: url('../img/cabana.jpeg');
+    min-height: 100%;
+}
+
+.p-img2{
+    background-image: url('../img/forest-doggo.jpeg');
+    min-height: 400px;
+}
+
+.p-img3{
+    background-image: url('../img/starry-sky.jpeg');
+    min-height: 400px;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: lightcyan;
+
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.p-text{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.p-text .border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.p-text .border.trans{
+    background-color: transparent;
+}
+
+
+
+@media(max-width: 568px){
+    .p-img1, .p-img2, .p-img3{
+        background-attachment: scroll;
+    }
+}
